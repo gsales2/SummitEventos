@@ -96,7 +96,7 @@ header .container .btn {
   }
 
   header .container .btn:hover {
-    background-color: var(--accent-light);
+    background-color: var(--accent-dark);
   }
 }
 
