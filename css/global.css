@@ -13,13 +13,16 @@
   --accent-light: #3b82f6;
   --text-color: #333;
   --light-gray: #f5f7fa;
+  --pure-white: #ffffff;
 }
 
 /* GERAL */
 body {
+  background-color: red;
   font-family: "Inter", sans-serif;
   color: var(--text-color);
   line-height: 1.6;
+  height: 100vmax;
 }
 
 h1,
@@ -32,12 +35,22 @@ section {
   padding: 80px 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 .text-limit {
   max-width: 700px;
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
 }
