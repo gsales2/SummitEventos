@@ -87,8 +87,34 @@
     font-size: 1.25rem;
   }
 
-  hero-buttons .btn {
+  .hero-buttons .btn {
     padding: 16px 32px;
     font-size: 1.2rem;
   }
+}
+
+@media screen and (min-width: 1400px) {
+    .hero {
+        min-height: 90h;
+        padding: 160px 0;
+    }
+
+    .hero-text {
+        max-width: 810px;
+    }
+
+    .hero-text h1 {
+        font-size: 3.5rem;
+        margin-bottom: 28px;
+    }
+
+    .hero-text p {
+        font-size: 1.3rem;
+        margin-bottom: 34px;
+    }
+
+    .hero-buttons .btn {
+        padding: 18px 38px;
+        font-size: 1.25rem;
+    }
 }
