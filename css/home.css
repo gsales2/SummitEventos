@@ -48,6 +48,12 @@
 
 /* END HERO SECTION - MOBILE */
 
+/* BENEFICIOS SECTION - MOBILE */
+
+.beneficios {
+  background-color: var(--light-gray);
+}
+
 @media screen and (min-width: 768px) {
   /* HERO SECTION - TABLET*/
     .hero {

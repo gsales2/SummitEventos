@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-/* VARIÁEIS */
+/* VARIÁVEIS */
 :root {
   --primary-color: #1f2a44;
   --accent-color: #2563eb;
@@ -13,7 +13,6 @@
   --accent-light: #3b82f6;
   --text-color: #333;
   --light-gray: #f5f7fa;
-  --pure-white: #ffffff;
 }
 
 /* GERAL */
