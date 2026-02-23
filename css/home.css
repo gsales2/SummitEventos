@@ -26,7 +26,7 @@
 }
 
 .hero-text {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 .hero-text h1 {
@@ -44,7 +44,7 @@
 }
 
 .hero-buttons .btn-primary {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* END HERO SECTION - MOBILE */
@@ -53,55 +53,106 @@
 
 .beneficios {
   background-color: var(--light-gray);
+  padding: 80px 0;
 }
 
-.beneficios .content-beneficios h2 {
+.beneficios h2 {
   text-align: center;
-  padding-bottom: 30px;
-}
-
-.beneficios .content-beneficios .container-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container-cards .card-beneficios .title-card-beneficios {
-  font-size: 1.3rem;
+  padding-bottom: 50px;
+  font-size: 2.2rem;
   color: var(--primary-color);
 }
 
-.container-cards .card-beneficios {
-  text-align: center;
-  border: 2px solid var(--accent-color);
-  border-radius: 8px;
-  padding: 7px;
+.container-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  width: 100%;
 }
 
+.card-beneficios {
+  background-color: #ffffff; /* Fundo branco destaca no fundo cinza */
+  text-align: left; /* Alinhamento à esquerda passa mais seriedade corporativa */
+  padding: 40px 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(37, 99, 235, 0.1); /* Borda muito sutil */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Sombra leve */
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.card-beneficios:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-color);
+  box-shadow:
+    0 20px 25px -5px rgba(31, 42, 68, 0.1),
+    0 10px 10px -5px rgba(31, 42, 68, 0.04);
+}
+
+.title-card-beneficios {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column; /* Ícone em cima do texto */
+  gap: 15px;
+}
+
+.title-card-beneficios i {
+  font-size: 2rem;
+  color: var(--accent-color);
+  background: var(--light-gray);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card-beneficios:hover .title-card-beneficios i {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.card-beneficios p {
+  color: #555;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
 
 @media screen and (min-width: 768px) {
   /* HERO SECTION - TABLET*/
-    .hero {
-        min-height: 80vh;
-        padding: 120px 0;
-    }
+  .hero {
+    min-height: 80vh;
+    padding: 120px 0;
+  }
 
-    .hero-text {
-        max-width: 600px;
-    }
+  .hero-text {
+    max-width: 600px;
+  }
 
-    .hero-text h1 {
-        font-size: 2.3rem;
-    }
+  .hero-text h1 {
+    font-size: 2.3rem;
+  }
 
-    .hero-text p {
-        font-size: 1.125rem;
-    }
+  .hero-text p {
+    font-size: 1.125rem;
+  }
 
-    .hero-buttons .btn-primary {
-        margin-right: 20px;
-    }
-    /* END HERO SECTION - TABLET */
+  .hero-buttons .btn-primary {
+    margin-right: 20px;
+  }
+  /* END HERO SECTION - TABLET */
+
+  /* BENEFICIOS SECTION - TABLET */
+  .container-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -128,32 +179,51 @@
     font-size: 1.2rem;
   }
   /* END HERO SECTION - DESKTOP */
+
+  /* BENEFICIOS SECTION - TABLET */
+
+  .container-cards {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Ou repeat(4, 1fr) se quiser todos na mesma linha */
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1400px) {
   /* HERO SECTION - LARGE DESKTOP */
-    .hero {
-        min-height: 90h;
-        padding: 160px 0;
-    }
+  .hero {
+    min-height: 90vh;
+    padding: 160px 0;
+  }
 
-    .hero-text {
-        max-width: 810px;
-    }
+  .hero-text {
+    max-width: 810px;
+  }
 
-    .hero-text h1 {
-        font-size: 3.5rem;
-        margin-bottom: 28px;
-    }
+  .hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 28px;
+  }
 
-    .hero-text p {
-        font-size: 1.3rem;
-        margin-bottom: 34px;
-    }
+  .hero-text p {
+    font-size: 1.3rem;
+    margin-bottom: 34px;
+  }
 
-    .hero-buttons .btn {
-        padding: 18px 38px;
-        font-size: 1.25rem;
-    }
-    /* END HERO SECTION - LARGE DESKTOP */
+  .hero-buttons .btn {
+    padding: 18px 38px;
+    font-size: 1.25rem;
+  }
+  /* END HERO SECTION - LARGE DESKTOP */
+
+
+  .container-cards {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    gap: 25px;
+  }
 }
