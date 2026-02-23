@@ -30,6 +30,7 @@
 }
 
 .hero-text h1 {
+  color: white;
   font-size: 2rem;
   line-height: 1.15;
   font-weight: 700;
@@ -53,6 +54,30 @@
 .beneficios {
   background-color: var(--light-gray);
 }
+
+.beneficios .content-beneficios h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.beneficios .content-beneficios .container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-cards .card-beneficios .title-card-beneficios {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}
+
+.container-cards .card-beneficios {
+  text-align: center;
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 7px;
+}
+
 
 @media screen and (min-width: 768px) {
   /* HERO SECTION - TABLET*/
