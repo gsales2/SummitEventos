@@ -30,21 +30,18 @@ header .container .btn {
   cursor: pointer;
 }
 
-/* No Mobile (fora de qualquer media query) */
 .nav-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px; /* Espaço entre os links */
-
+  gap: 30px;
   position: fixed;
   top: 0;
   right: -100%;
   width: 100%;
   height: 100vh;
 
-  /* Azul escuro com transparência e desfoque atrás */
   background-color: rgba(31, 42, 68, 0.98);
   backdrop-filter: blur(10px);
 
@@ -52,7 +49,6 @@ header .container .btn {
   z-index: 1000;
 }
 
-/* O "Pulo do Gato": Quando o JS colocar a classe .active, o menu volta para a tela */
 .nav-list.active {
   right: 0;
 }
@@ -103,7 +99,7 @@ header .container .btn {
     color: var(--accent-color);
     cursor: pointer;
     position: relative;
-    z-index: 1001; /* Fica acima do fundo do menu */
+    z-index: 1001;
     background: white;
     width: 45px;
     height: 45px;
@@ -128,19 +124,33 @@ header .container .btn {
   }
 
   header .container .nav .nav-list {
-    display: flex;
-    width: auto;
-    height: auto;
-    background: none;
-    flex-direction: row;
-    gap: 32px;
-    align-items: center;
+    display: flex !important; /* Força a exibição */
+    position: static !important; /* Remove o 'fixed' que cobria a tela */
+    width: auto !important;
+    height: auto !important;
+    background-color: transparent !important; /* Tira o fundo escuro do mobile */
+    backdrop-filter: none !important; /* Tira o desfoque */
+    flex-direction: row !important; /* Itens um ao lado do outro */
+    justify-content: flex-end;
+    gap: 30px;
+    right: 0 !important; /* Garante que está na posição correta */
+    transition: none !important; /* Remove a animação de deslizar */
+    padding: 0;
+  }
+
+  .nav-list li {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    visibility: visible !important;
   }
 
   header .container .nav .nav-list a {
     font-weight: 500;
     letter-spacing: 0.3px;
-    font-size: 1rem;
+    font-size: 1rem !important;
+    text-transform: none;
+    letter-spacing: normal;
     color: var(--primary-color);
     position: relative;
     transition: 0.3s;
@@ -163,6 +173,10 @@ header .container .btn {
 
   header .container .nav .nav-list a:hover::after {
     width: 100%;
+  }
+
+  .menu-bar {
+    display: none !important;
   }
 
   header .container .btn {
