@@ -44,6 +44,7 @@
 }
 
 .hero-buttons .btn-primary {
+  display: inline-block;
   margin-bottom: 10px;
 }
 
@@ -125,6 +126,76 @@
   line-height: 1.6;
 }
 
+/* SECTION ESPECIALIDADES */
+
+.especialidades {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.especialidades .subtitle {
+  color: var(--accent-dark);
+}
+
+.especialidades h2 {
+  font-size: 1.75rem;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.grid-especialidades {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.item-especialidade {
+  position: relative;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.item-especialidade img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.overlay-especialidade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(31, 42, 68, 0.9), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  color: white;
+}
+
+.item-especialidade:hover img {
+  transform: scale(1.1);
+}
+
+.item-especialidade h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.especialidades-action {
+  text-align: center;
+  margin-top: 50px; /* Dá um respiro em relação às fotos */
+}
+
+/* Opcional: fazer o botão brilhar um pouco mais aqui */
+.especialidades-action .btn {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+}
+
 @media screen and (min-width: 768px) {
   /* HERO SECTION - TABLET*/
   .hero {
@@ -152,6 +223,16 @@
   /* BENEFICIOS SECTION - TABLET */
   .container-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ESPECIALIDADES SECTION */
+
+  .grid-especialidades {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .especialidades h2 {
+    font-size: 1.875rem;
   }
 }
 
@@ -191,6 +272,10 @@
     max-width: 900px;
     margin: 0 auto;
   }
+  /* ESPECIALIDADES SECTION */
+  .especialidades h2 {
+    font-size: 2.2rem;
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -219,7 +304,6 @@
     font-size: 1.25rem;
   }
   /* END HERO SECTION - LARGE DESKTOP */
-
 
   .container-cards {
     grid-template-columns: repeat(4, 1fr);
