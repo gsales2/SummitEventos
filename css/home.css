@@ -277,8 +277,8 @@
 
 .experiencia-badge {
   position: absolute;
-  bottom: -20px;
-  right: -20px;
+  bottom: -32px;
+  right: -15px;
   background-color: var(--accent-color);
   color: white;
   padding: 20px;

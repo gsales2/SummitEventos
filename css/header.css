@@ -11,12 +11,15 @@ header .container {
   align-items: center;
 }
 
+header .container .nav {
+  display: block;
+}
+
 .logo img {
   height: 44px;
   width: auto;
 }
 
-header .container .nav,
 header .container .btn {
   display: none;
 }
@@ -27,13 +30,88 @@ header .container .btn {
   cursor: pointer;
 }
 
+/* No Mobile (fora de qualquer media query) */
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Espaço entre os links */
+
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+
+  /* Azul escuro com transparência e desfoque atrás */
+  background-color: rgba(31, 42, 68, 0.98);
+  backdrop-filter: blur(10px);
+
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  z-index: 1000;
+}
+
+/* O "Pulo do Gato": Quando o JS colocar a classe .active, o menu volta para a tela */
+.nav-list.active {
+  right: 0;
+}
+
+.nav-list li {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 0.4s ease;
+}
+
+.nav-list.active li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.nav-list.active li:nth-child(1) { transition-delay: 0.2s; }
+.nav-list.active li:nth-child(2) { transition-delay: 0.3s; }
+.nav-list.active li:nth-child(3) { transition-delay: 0.4s; }
+.nav-list.active li:nth-child(4) { transition-delay: 0.5s; }
+
+.nav-list a {
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-list a:active {
+  color: var(--accent-light);
+}
+
+.menu-bar {
+  position: relative;
+  z-index: 1001;
+}
+
 @media screen and (min-width: 768px) {
   .logo img {
     height: 52px;
   }
 
   .menu-bar {
-    font-size: 32px;
+    font-size: 24px;
+    color: var(--accent-color);
+    cursor: pointer;
+    position: relative;
+    z-index: 1001; /* Fica acima do fundo do menu */
+    background: white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -51,6 +129,9 @@ header .container .btn {
 
   header .container .nav .nav-list {
     display: flex;
+    width: auto;
+    height: auto;
+    background: none;
     flex-direction: row;
     gap: 32px;
     align-items: center;
