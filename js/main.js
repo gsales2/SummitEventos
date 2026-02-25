@@ -19,7 +19,7 @@ const startCounters = () => {
   });
 };
 
-// Ativar quando a seção aparecer na tela (Intersection Observer)
+// Ativar quando a seção aparecer na tela.
 const observer = new IntersectionObserver(
   (entries) => {
     if (entries[0].isIntersecting) {
@@ -28,9 +28,10 @@ const observer = new IntersectionObserver(
   },
   { threshold: 0.5 },
 );
-
-observer.observe(document.querySelector(".estatisticas"));
-
+const secaoEstatisticas = document.querySelector(".estatisticas");
+if (secaoEstatisticas) {
+  observer.observe(secaoEstatisticas);
+}
 //Menu hamburguer menu//
 
 function menuOnClick() {
@@ -40,18 +41,14 @@ function menuOnClick() {
   if (navList && icon) {
     navList.classList.toggle("active");
 
-    // Verifica se o menu abriu
     if (navList.classList.contains("active")) {
-      // Tenta o xmark, se não, tenta o times
       icon.classList.remove("fa-bars");
       icon.classList.add("fa-xmark");
 
-      // Caso seu Font Awesome seja antigo e o xmark falhe:
       if (!icon.classList.contains("fa-xmark")) {
         icon.classList.add("fa-times");
       }
     } else {
-      // Volta para o hambúrguer
       icon.classList.remove("fa-xmark", "fa-times");
       icon.classList.add("fa-bars");
     }
