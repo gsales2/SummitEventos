@@ -3,6 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+
+    <meta
+      name="description"
+      content="Summit Eventos - Transformamos sua visão corporativa em experiências memoráveis. Congressos, convenções e lançamentos com logística impecável."
+    />
+    <meta
+      name="keywords"
+      content="eventos corporativos, convenções, lançamentos de produtos, gestão de eventos, Summit Eventos"
+    />
+    <meta name="author" content="LUMEX" />
+
+    <meta
+      property="og:title"
+      content="Summit Eventos | Experiências Corporativas de Alto Impacto"
+    />
+    <meta
+      property="og:description"
+      content="Planejamento e execução de eventos que elevam o padrão da sua marca."
+    />
+    <meta property="og:image" content="assets/images/og-image.jpg" />
+    <meta property="og:url" content="https://www.summiteventos.com" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap"
@@ -15,6 +45,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Summit Eventos</title>
   </head>
+
   <body>
     <header>
       <div class="container">
@@ -26,11 +57,11 @@
             <li><a href="index.html">Início</a></li>
             <li><a href="servicos.html">Eventos</a></li>
             <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#empresa">Contato</a></li>
           </ul>
         </nav>
 
-        <a href="#" class="btn btn-primary">Orçamento</a>
+        <a href="#empresa" class="btn btn-primary">Orçamento</a>
         <div class="menu-bar" onclick="menuOnClick()">
           <i class="fa-solid fa-bars"></i>
         </div>
@@ -50,7 +81,7 @@
         </div>
       </section>
 
-      <section class="contato-secao">
+      <section class="contato-secao" id="contato-secao">
         <div class="container grid-contato">
           <div class="contato-info">
             <div class="info-card">
@@ -162,9 +193,24 @@
           <p><i class="fa-solid fa-phone"></i> (11) 99999-9999</p>
           <p><i class="fa-solid fa-envelope"></i> contato@summiteventos.com</p>
           <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a
+              href="https://www.instagram.com"
+              aria-label="Siga-nos no Instagram"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              aria-label="Visite nosso LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.whatsapp.com"
+              target="_blank"
+              aria-label="Chame no WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
           </div>
         </div>
       </div>
