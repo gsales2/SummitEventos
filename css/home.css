@@ -6,7 +6,7 @@
   min-height: 75vh;
   position: relative;
   padding: 100px 0;
-  background-image: url(../assets/images/hero-img.jpg);
+  background-image: url(../assets/images/hero-img.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -133,7 +133,7 @@
 .estatisticas {
   background:
     linear-gradient(rgba(31, 42, 68, 0.9), rgba(31, 42, 68, 0.6)),
-    url("../assets/images/bg-stats.jpg");
+    url("../assets/images/bg-stats.webp");
   background-size: cover;
   background-attachment: fixed;
   color: white;

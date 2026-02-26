@@ -5,7 +5,7 @@
   color: white;
   background:
     linear-gradient(rgba(31, 42, 68, 0.9), rgba(31, 42, 68, 0.6)),
-    url("../assets/images/bg-stats.jpg");
+    url("../assets/images/bg-stats.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -117,7 +117,7 @@ textarea:focus {
     gap: 10px;
   }
 
-  info-card i {
+  .info-card i {
     font-size: 1.2rem;
     padding: 10px;
   }
@@ -134,5 +134,4 @@ textarea:focus {
 }
 
 @media screen and (min-width: 1400px) {
-  
 }

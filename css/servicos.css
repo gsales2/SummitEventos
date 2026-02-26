@@ -5,7 +5,7 @@
   color: white;
   background:
     linear-gradient(rgba(31, 42, 68, 0.9), rgba(31, 42, 68, 0.6)),
-    url("../assets/images/bg-stats.jpg");
+    url("../assets/images/bg-stats.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

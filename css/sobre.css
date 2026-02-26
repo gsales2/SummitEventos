@@ -2,7 +2,7 @@
 .sobre-hero {
   background:
     linear-gradient(rgba(31, 42, 68, 0.9), rgba(31, 42, 68, 0.6)),
-    url("../assets/images/hero-img.jpg");
+    url("../assets/images/hero-img.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 }
 
 .sobre-hero .container h1 {
-    color: white;
+  color: white;
 }
 
 /* HISTORIA SECTION */
