@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://summit-eventos-gsales.vercel.app/sitemap.xml

@@ -1,280 +1,262 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/apple-touch-icon.png"
-    />
 
-    <meta
-      name="description"
-      content="Summit Eventos - Transformamos sua visão corporativa em experiências memoráveis. Congressos, convenções e lançamentos com logística impecável."
-    />
-    <meta
-      name="keywords"
-      content="eventos corporativos, convenções, lançamentos de produtos, gestão de eventos, Summit Eventos"
-    />
-    <meta name="author" content="LUMEX" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-      property="og:title"
-      content="Summit Eventos | Experiências Corporativas de Alto Impacto"
-    />
-    <meta
-      property="og:description"
-      content="Planejamento e execução de eventos que elevam o padrão da sua marca."
-    />
-    <meta property="og:image" content="assets/images/bg-stats.webp" />
-    <meta property="og:url" content="https://www.summiteventos.com" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Summit Eventos</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 
-  <body>
-    <header>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2"
+    as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-brands-400.woff2"
+    as="font" type="font/woff2" crossorigin="anonymous" />
+
+  <title>Eventos Corporativos e Sociais | Summit Eventos</title>
+  <meta name="description"
+    content="Conheça nossas especialidades: congressos, lançamentos de produtos, eventos sociais de luxo e treinamentos corporativos com execução impecável." />
+  <meta name="keywords"
+    content="serviços de eventos, organização de congressos, lançamentos de marcas, festas de gala, treinamentos empresas" />
+  <meta name="author" content="LUMEX" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Serviços e Especialidades | Summit Eventos" />
+  <meta property="og:description" content="Soluções completas para eventos que exigem perfeição e alto impacto." />
+  <meta property="og:image" content="assets/images/bg-stats.webp" />
+  <meta property="og:url" content="https://summit-eventos.vercel.app/servicos.html" />
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/header.css" />
+
+  <link rel="stylesheet" href="css/style.css" media="print" onload="this.media = 'all'" />
+  <link rel="stylesheet" href="css/footer.css" media="print" onload="this.media = 'all'" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print"
+    onload="this.media = 'all'" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media = 'all'" />
+
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Organização de Eventos Corporativos",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Summit Eventos"
+        },
+        "description": "Planejamento e execução de congressos, lançamentos e eventos premium."
+      }
+    </script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" 
+      class="logo"><img 
+      src="assets/images/logo-mobile.webp" 
+      alt="Summit Eventos" /></a>
+      <nav class="nav">
+        <ul class="nav-list" type="none">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Eventos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="contato.html" class="btn btn-primary">Orçamento</a>
+      <button class="menu-bar" aria-label="Abrir menu" onclick="menuOnClick()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="servicos-hero">
       <div class="container">
-        <a href="index.html" class="logo"
-          ><img src="assets/images/logo.webp" alt="Summit Eventos"
-        /></a>
-        <nav class="nav">
-          <ul class="nav-list" type="none">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="servicos.html">Eventos</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
-
-        <a href="contato.html" class="btn btn-primary">Orçamento</a>
-        <div class="menu-bar" aria-label="Abrir menu" onclick="menuOnClick()">
-          <i class="fa-solid fa-bars"></i>
-        </div>
+        <h1>Nossas <span class="highlight">Especialidades</span></h1>
+        <p>Soluções completas para eventos que exigem perfeição e impacto.</p>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="servicos-hero">
-        <div class="container">
-          <h1>Nossas <span class="highlight">Especialidades</span></h1>
-          <p>Soluções completas para eventos que exigem perfeição e impacto.</p>
-        </div>
-      </section>
-
-      <section class="secao-grade">
-        <div class="container grid-servicos">
-          <article class="card-servico">
-            <figure class="imagem-wrapper">
-              <img
-                src="assets/images/corporativo.webp"
-                alt="Evento Corporativo Premium"
-              />
-              <div class="tag-categoria">Business</div>
-            </figure>
-            <div class="card-corpo">
-              <h3>Eventos Corporativos</h3>
-              <p>
-                Congressos, convenções e treinamentos com infraestrutura de
-                ponta e logística impecável.
-              </p>
-              <a href="contato.html" class="link-acao">
-                Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
-          </article>
-
-          <article class="card-servico">
-            <figure class="imagem-wrapper">
-              <img
-                src="assets/images/lancamentos.webp"
-                alt="Lançamento de produtos"
-              />
-              <div class="tag-categoria">Marketing</div>
-            </figure>
-            <div class="card-corpo">
-              <h3>Lançamentos de Produtos</h3>
-              <p>
-                Criamos experiências imersivas para apresentar sua marca ao
-                mercado com o máximo de impacto.
-              </p>
-              <a href="contato.html" class="link-acao">
-                Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
-          </article>
-
-          <article class="card-servico">
-            <figure class="imagem-wrapper">
-              <img
-                src="assets/images/social.webp"
-                alt="Eventos sociais de luxo"
-              />
-              <div class="tag-categoria">Premium</div>
-            </figure>
-            <div class="card-corpo">
-              <h3>Sociais de Luxo</h3>
-              <p>
-                Celebrações exclusivas onde cada detalhe reflete a personalidade
-                e o sonho dos nossos clientes.
-              </p>
-              <a href="contato.html" class="link-acao">
-                Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
-          </article>
-
-          <article class="card-servico">
-            <figure class="imagem-wrapper">
-              <img
-                src="assets/images/feiras.webp"
-                alt="Estandes em feiras de negócios"
-              />
-              <div class="tag-categoria">Expos</div>
-            </figure>
-            <div class="card-corpo">
-              <h3>Feiras e Exposições</h3>
-              <p>
-                Montagem de estandes e gestão completa de logística para feiras
-                de negócios e exposições setoriais.
-              </p>
-              <a href="contato.html" class="link-acao">
-                Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
-          </article>
-
-          <article class="card-servico">
-            <figure class="imagem-wrapper">
-              <img
-                src="assets/images/treinamento.webp"
-                alt="Treinamento corporativo"
-              />
-              <div class="tag-categoria">Educação</div>
-            </figure>
-            <div class="card-corpo">
-              <h3>Workshops e Treinamentos</h3>
-              <p>
-                Ambientes preparados para o aprendizado, com tecnologia
-                audiovisual de última geração para sua equipe.
-              </p>
-              <a href="contato.html" class="link-acao">
-                Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
-          </article>
-
-          <article class="card-servico">
-            <figure class="imagem-wrapper">
-              <img
-                src="assets/images/gala.webp"
-                alt="Noite de gala e premiações"
-              />
-              <div class="tag-categoria">Social</div>
-            </figure>
-            <div class="card-corpo">
-              <h3>Noites de Gala</h3>
-              <p>
-                Jantares de premiação e celebrações de final de ano com
-                sofisticação, gastronomia premium e entretenimento.
-              </p>
-              <a href="contato.html" class="link-acao">
-                Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="servicos-rodape">
-        <div class="container">
-          <div class="caixa-destaque">
-            <h2>Tem um projeto específico em mente?</h2>
+    <section class="secao-grade">
+      <div class="container grid-servicos">
+        <article class="card-servico">
+          <figure class="imagem-wrapper">
+            <img src="assets/images/corporativo.webp" alt="Evento Corporativo Premium" />
+            <div class="tag-categoria">Business</div>
+          </figure>
+          <div class="card-corpo">
+            <h3>Eventos Corporativos</h3>
             <p>
-              Nossa equipe está pronta para transformar sua ideia em um evento
-              memorável.
+              Congressos, convenções e treinamentos com infraestrutura de
+              ponta e logística impecável.
             </p>
-            <a href="contato.html" class="btn btn-primary"
-              >Fale com um Especialista</a
-            >
+            <a href="contato.html" class="link-acao">
+              Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
-        </div>
-      </section>
-    </main>
+        </article>
 
-    <footer class="footer">
-      <div class="container grid-footer">
-        <div class="footer-about">
-          <img
-            src="assets/images/logo.webp"
-            alt="Summit Eventos"
-            class="footer-logo"
-          />
+        <article class="card-servico">
+          <figure class="imagem-wrapper">
+            <img src="assets/images/lancamentos.webp" alt="Lançamento de produtos" />
+            <div class="tag-categoria">Marketing</div>
+          </figure>
+          <div class="card-corpo">
+            <h3>Lançamentos de Produtos</h3>
+            <p>
+              Criamos experiências imersivas para apresentar sua marca ao
+              mercado com o máximo de impacto.
+            </p>
+            <a href="contato.html" class="link-acao">
+              Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="card-servico">
+          <figure class="imagem-wrapper">
+            <img src="assets/images/social.webp" alt="Eventos sociais de luxo" />
+            <div class="tag-categoria">Premium</div>
+          </figure>
+          <div class="card-corpo">
+            <h3>Sociais de Luxo</h3>
+            <p>
+              Celebrações exclusivas onde cada detalhe reflete a personalidade
+              e o sonho dos nossos clientes.
+            </p>
+            <a href="contato.html" class="link-acao">
+              Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="card-servico">
+          <figure class="imagem-wrapper">
+            <img src="assets/images/feiras.webp" alt="Estandes em feiras de negócios" />
+            <div class="tag-categoria">Expos</div>
+          </figure>
+          <div class="card-corpo">
+            <h3>Feiras e Exposições</h3>
+            <p>
+              Montagem de estandes e gestão completa de logística para feiras
+              de negócios e exposições setoriais.
+            </p>
+            <a href="contato.html" class="link-acao">
+              Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="card-servico">
+          <figure class="imagem-wrapper">
+            <img src="assets/images/treinamento.webp" alt="Treinamento corporativo" />
+            <div class="tag-categoria">Educação</div>
+          </figure>
+          <div class="card-corpo">
+            <h3>Workshops e Treinamentos</h3>
+            <p>
+              Ambientes preparados para o aprendizado, com tecnologia
+              audiovisual de última geração para sua equipe.
+            </p>
+            <a href="contato.html" class="link-acao">
+              Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="card-servico">
+          <figure class="imagem-wrapper">
+            <img src="assets/images/gala.webp" alt="Noite de gala e premiações" />
+            <div class="tag-categoria">Social</div>
+          </figure>
+          <div class="card-corpo">
+            <h3>Noites de Gala</h3>
+            <p>
+              Jantares de premiação e celebrações de final de ano com
+              sofisticação, gastronomia premium e entretenimento.
+            </p>
+            <a href="contato.html" class="link-acao">
+              Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="servicos-rodape">
+      <div class="container">
+        <div class="caixa-destaque">
+          <h2>Tem um projeto específico em mente?</h2>
           <p>
-            Transformando visões corporativas em experiências memoráveis com
-            precisão e criatividade.
+            Nossa equipe está pronta para transformar sua ideia em um evento
+            memorável.
           </p>
-        </div>
-
-        <div class="footer-links">
-          <h4>Links Rápidos</h4>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="servicos.html">Eventos</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-contact">
-          <h4>Fale Conosco</h4>
-          <p><i class="fa-solid fa-phone"></i> (11) 99999-9999</p>
-          <p><i class="fa-solid fa-envelope"></i> contato@summiteventos.com</p>
-          <div class="social-icons">
-            <a
-              href="https://www.instagram.com"
-              aria-label="Siga-nos no Instagram"
-              target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              aria-label="Visite nosso LinkedIn"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a
-              href="https://www.whatsapp.com"
-              target="_blank"
-              aria-label="Chame no WhatsApp"
-              ><i class="fa-brands fa-whatsapp"></i
-            ></a>
-          </div>
+          <a href="contato.html" class="btn btn-primary">Fale com um Especialista</a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="container">
-          <p>
-            &copy; 2026 Summit Eventos. Todos os direitos reservados.
-            Desenvolvido por <strong>LUMEX</strong>.
-          </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid-footer">
+      <div class="footer-about">
+        <img src="assets/images/logo-mobile.webp" alt="Summit Eventos" class="footer-logo" />
+        <p>
+          Transformando visões corporativas em experiências memoráveis com
+          precisão e criatividade.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Eventos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Fale Conosco</h4>
+        <p><i class="fa-solid fa-phone"></i> (11) 99999-9999</p>
+        <p><i class="fa-solid fa-envelope"></i> contato@summiteventos.com</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com" 
+          aria-label="Siga-nos no Instagram" 
+          target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com" 
+          target="_blank" 
+          aria-label="Visite nosso LinkedIn"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.whatsapp.com" 
+          target="_blank" 
+          aria-label="Chame no WhatsApp"><i
+              class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
-    </footer>
-    <script src="js/main.js"></script>
-  </body>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>
+          &copy; 2026 Summit Eventos. Todos os direitos reservados.
+          Desenvolvido por <strong>LUMEX</strong>.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+
 </html>

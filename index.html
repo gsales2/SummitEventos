@@ -1,333 +1,302 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <link
-      rel="preload"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-brands-400.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/apple-touch-icon.png"
-    />
 
-    <meta
-      name="description"
-      content="Summit Eventos - Transformamos sua visão corporativa em experiências memoráveis. Congressos, convenções e lançamentos com logística impecável."
-    />
-    <meta
-      name="keywords"
-      content="eventos corporativos, convenções, lançamentos de produtos, gestão de eventos, Summit Eventos"
-    />
-    <meta name="author" content="LUMEX" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-      property="og:title"
-      content="Summit Eventos | Experiências Corporativas de Alto Impacto"
-    />
-    <meta
-      property="og:description"
-      content="Planejamento e execução de eventos que elevam o padrão da sua marca."
-    />
-    <meta property="og:image" content="assets/images/og-image.jpg" />
-    <meta property="og:url" content="https://www.summiteventos.com" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Summit Eventos</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 
-  <body>
-    <header>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2"
+    as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-brands-400.woff2"
+    as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" fetchpriority="high" as="image" href="assets/images/hero-img.webp" type="image/webp" />
+
+  <title>Summit Eventos | Experiências Corporativas de Alto Impacto</title>
+  <meta name="description"
+    content="Summit Eventos - Transformamos sua visão corporativa em experiências memoráveis. Congressos, convenções e lançamentos com logística impecável." />
+  <meta name="keywords"
+    content="eventos corporativos, convenções, lançamentos de produtos, gestão de eventos, Summit Eventos" />
+  <meta name="author" content="LUMEX" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Summit Eventos | Experiências Corporativas de Alto Impacto" />
+  <meta property="og:description" content="Planejamento e execução de eventos que elevam o padrão da sua marca." />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+  <meta property="og:url" content="https://www.summiteventos.com" />
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EventVenue",
+        "name": "Summit Eventos",
+        "description": "Transformamos sua visão corporativa em experiências memoráveis. Congressos, convenções e lançamentos.",
+        "url": "https://seu-dominio.vercel.app",
+        "telephone": "+5511999999999",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "openingHours": "Mo-Fr 09:00-18:00"
+      }
+    </script>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/header.css" />
+
+  <link rel="stylesheet" href="css/home.css" media="print" onload="this.media = 'all'" />
+  <link rel="stylesheet" href="css/footer.css" media="print" onload="this.media = 'all'" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print"
+    onload="this.media = 'all'" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media = 'all'" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" 
+      class="logo"><img 
+      src="assets/images/logo-mobile.webp" 
+      alt="Summit Eventos" /></a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Eventos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="contato.html" class="btn btn-primary">Orçamento</a>
+      <button class="menu-bar" aria-label="Abrir menu" onclick="menuOnClick()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>
+            Transformamos eventos em
+            <span class="highlight">experiências memoráveis</span>
+          </h1>
+          <p>
+            Planejamento estratégico e execução impecável para empresas que
+            querem impactar.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Solicitar Orçamento</a>
+            <a href="servicos.html" class="btn btn-outline">Ver Eventos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="beneficios">
+      <div class="container content-beneficios">
+        <h2>Por que escolher a <span class="highlight">Summit?</span></h2>
+        <div class="container-cards">
+          <div class="card-beneficios">
+            <h3 class="title-card-beneficios">
+              <span class="icon-wrapper"><i class="fa-solid fa-calendar-check"></i></span>
+              Planejamento Estratégico
+            </h3>
+            <p>
+              Eliminamos o improviso. Nossa metodologia de cronograma garante
+              que cada detalhe, do buffet à logística, esteja sob controle
+              total, antes mesmo do evento começar.
+            </p>
+          </div>
+          <div class="card-beneficios">
+            <h3 class="title-card-beneficios">
+              <span class="icon-wrapper"><i class="fa-solid fa-lightbulb"></i></span>
+              Tecnologia e Inovação
+            </h3>
+            <p>
+              Utilizamos o que há de mais moderno em sonorização, iluminação e
+              transmissão. Seu evento com a clareza e o impacto visual que o
+              mercado corporativo exige.
+            </p>
+          </div>
+          <div class="card-beneficios">
+            <h3 class="title-card-beneficios">
+              <span class="icon-wrapper"><i class="fa-solid fa-handshake"></i></span>
+              Gestão de Ponta a Ponta
+            </h3>
+            <p>
+              Você como convidado no seu próprio evento. Nossa equipe de
+              cerimonialistas cuida de toda a operação e resolução de
+              problemas em tempo real.
+            </p>
+          </div>
+          <div class="card-beneficios">
+            <h3 class="title-card-beneficios">
+              <span class="icon-wrapper"><i class="fa-solid fa-palette"></i></span>
+              Design de Experiência
+            </h3>
+            <p>
+              Não entregamos festas padrão. Criamos ambientes imersivos que
+              comunicam a identidade da sua marca e engajam seus convidados de
+              forma única.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="especialidades">
       <div class="container">
-        <a href="index.html" class="logo"
-          ><img src="assets/images/logo.webp" alt="Summit Eventos"
-        /></a>
-        <nav class="nav">
-          <ul class="nav-list" type="none">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="servicos.html">Eventos</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
+        <div class="section-header">
+          <h2>
+            Soluções completas para<br />
+            <span class="highlight">todos os eventos</span>
+          </h2>
+        </div>
 
-        <a href="contato.html" class="btn btn-primary">Orçamento</a>
-        <div class="menu-bar" aria-label="Abrir menu" onclick="menuOnClick()">
-          <i class="fa-solid fa-bars"></i>
+        <div class="grid-especialidades">
+          <div class="item-especialidade">
+            <img src="assets/images/corporativo.webp" alt="Eventos Corporativos" />
+            <div class="overlay-especialidade">
+              <h3>Corporativos</h3>
+              <p>Congressos, convenções e treinamentos.</p>
+            </div>
+          </div>
+
+          <div class="item-especialidade">
+            <img src="assets/images/lancamentos.webp" alt="Lançamentos de Produtos" />
+            <div class="overlay-especialidade">
+              <h3>Lançamentos</h3>
+              <p>Impacto visual para novos produtos e marcas.</p>
+            </div>
+          </div>
+
+          <div class="item-especialidade">
+            <img src="assets/images/social.webp" alt="Eventos Sociais de Luxo" />
+            <div class="overlay-especialidade">
+              <h3>Sociais Premium</h3>
+              <p>Casamentos e celebrações exclusivas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="especialidades-action">
+          <a href="servicos.html" class="btn btn-outline">Conheça todos os nossos serviços</a>
         </div>
       </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="container hero-content">
-          <div class="hero-text">
-            <h1>
-              Transformamos eventos em
-              <span class="highlight">experiências memoráveis</span>
-            </h1>
-            <p>
-              Planejamento estratégico e execução impecável para empresas que
-              querem impactar.
-            </p>
-
-            <div class="hero-buttons">
-              <a href="#" class="btn btn-primary">Solicitar Orçamento</a>
-              <a href="servicos.html" class="btn btn-outline">Ver Eventos</a>
-            </div>
+    </section>
+    <section class="estatisticas">
+      <div class="container grid-estatisticas">
+        <div class="estatistica-item">
+          <span class="numero" data-target="150">0</span>
+          <p>Eventos Realizados</p>
+        </div>
+        <div class="estatistica-item">
+          <span class="numero" data-target="50">0</span>
+          <p>Clientes Corporativos</p>
+        </div>
+        <div class="estatistica-item">
+          <span class="numero" data-target="10">0</span>
+          <p>Anos de Mercado</p>
+        </div>
+        <div class="estatistica-item">
+          <span class="numero" data-target="98">0</span><span>%</span>
+          <p>Satisfação Garantida</p>
+        </div>
+      </div>
+    </section>
+    <section class="sobre-resumo">
+      <div class="container grid-sobre">
+        <div class="sobre-image">
+          <img src="assets/images/equipe-summit.webp" alt="Equipe Summit em ação" />
+          <div class="experiencia-badge">
+            <span>+10</span>
+            <p>Anos de Experiência</p>
           </div>
         </div>
-      </section>
-      <section class="beneficios">
-        <div class="container content-beneficios">
-          <h2>Por que escolher a <span class="highlight">Summit?</span></h2>
-          <div class="container-cards">
-            <div class="card-beneficios">
-              <h3 class="title-card-beneficios">
-                <span class="icon-wrapper"
-                  ><i class="fa-solid fa-calendar-check"></i
-                ></span>
-                Planejamento Estratégico
-              </h3>
-              <p>
-                Eliminamos o improviso. Nossa metodologia de cronograma garante
-                que cada detalhe, do buffet à logística, esteja sob controle
-                total, antes mesmo do evento começar.
-              </p>
-            </div>
-            <div class="card-beneficios">
-              <h3 class="title-card-beneficios">
-                <span class="icon-wrapper"
-                  ><i class="fa-solid fa-lightbulb"></i
-                ></span>
-                Tecnologia e Inovação
-              </h3>
-              <p>
-                Utilizamos o que há de mais moderno em sonorização, iluminação e
-                transmissão. Seu evento com a clareza e o impacto visual que o
-                mercado corporativo exige.
-              </p>
-            </div>
-            <div class="card-beneficios">
-              <h3 class="title-card-beneficios">
-                <span class="icon-wrapper"
-                  ><i class="fa-solid fa-handshake"></i
-                ></span>
-                Gestão de Ponta a Ponta
-              </h3>
-              <p>
-                Você como convidado no seu próprio evento. Nossa equipe de
-                cerimonialistas cuida de toda a operação e resolução de
-                problemas em tempo real.
-              </p>
-            </div>
-            <div class="card-beneficios">
-              <h3 class="title-card-beneficios">
-                <span class="icon-wrapper"
-                  ><i class="fa-solid fa-palette"></i
-                ></span>
-                Design de Experiência
-              </h3>
-              <p>
-                Não entregamos festas padrão. Criamos ambientes imersivos que
-                comunicam a identidade da sua marca e engajam seus convidados de
-                forma única.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="especialidades">
-        <div class="container">
-          <div class="section-header">
-            <h2>
-              Soluções completas para<br />
-              <span class="highlight">todos os eventos</span>
-            </h2>
-          </div>
 
-          <div class="grid-especialidades">
-            <div class="item-especialidade">
-              <img
-                src="assets/images/corporativo.webp"
-                alt="Eventos Corporativos"
-              />
-              <div class="overlay-especialidade">
-                <h3>Corporativos</h3>
-                <p>Congressos, convenções e treinamentos.</p>
-              </div>
-            </div>
-
-            <div class="item-especialidade">
-              <img
-                src="assets/images/lancamentos.webp"
-                alt="Lançamentos de Produtos"
-              />
-              <div class="overlay-especialidade">
-                <h3>Lançamentos</h3>
-                <p>Impacto visual para novos produtos e marcas.</p>
-              </div>
-            </div>
-
-            <div class="item-especialidade">
-              <img
-                src="assets/images/social.webp"
-                alt="Eventos Sociais de Luxo"
-              />
-              <div class="overlay-especialidade">
-                <h3>Sociais Premium</h3>
-                <p>Casamentos e celebrações exclusivas.</p>
-              </div>
-            </div>
-          </div>
-          <div class="especialidades-action">
-            <a href="servicos.html" class="btn btn-outline"
-              >Conheça todos os nossos serviços</a
-            >
-          </div>
-        </div>
-      </section>
-      <section class="estatisticas">
-        <div class="container grid-estatisticas">
-          <div class="estatistica-item">
-            <span class="numero" data-target="150">0</span>
-            <p>Eventos Realizados</p>
-          </div>
-          <div class="estatistica-item">
-            <span class="numero" data-target="50">0</span>
-            <p>Clientes Corporativos</p>
-          </div>
-          <div class="estatistica-item">
-            <span class="numero" data-target="10">0</span>
-            <p>Anos de Mercado</p>
-          </div>
-          <div class="estatistica-item">
-            <span class="numero" data-target="98">0</span><span>%</span>
-            <p>Satisfação Garantida</p>
-          </div>
-        </div>
-      </section>
-      <section class="sobre-resumo">
-        <div class="container grid-sobre">
-          <div class="sobre-image">
-            <img
-              src="assets/images/equipe-summit.webp"
-              alt="Equipe Summit em ação"
-            />
-            <div class="experiencia-badge">
-              <span>+10</span>
-              <p>Anos de Experiência</p>
-            </div>
-          </div>
-
-          <div class="sobre-text">
-            <span class="highlight">Sua parceira estratégica</span>
-            <h2>
-              Excelência na execução,<br />
-              paixão pelo <span class="highlight">sucesso.</span>
-            </h2>
-            <p>
-              A Summit nasceu com o propósito de elevar o padrão dos eventos
-              corporativos. Mais do que organizar, nós projetamos experiências
-              que conectam pessoas e fortalecem marcas.
-            </p>
-            <p>
-              Nossa equipe combina rigor técnico com sensibilidade criativa,
-              garantindo que sua única preocupação seja receber seus convidados.
-            </p>
-            <a href="sobre.html" class="btn btn-primary"
-              >Conheça nossa história</a
-            >
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container grid-footer">
-        <div class="footer-about">
-          <img
-            src="assets/images/logo.webp"
-            alt="Summit Eventos"
-            class="footer-logo"
-          />
+        <div class="sobre-text">
+          <span class="highlight">Sua parceira estratégica</span>
+          <h2>
+            Excelência na execução,<br />
+            paixão pelo <span class="highlight">sucesso.</span>
+          </h2>
           <p>
-            Transformando visões corporativas em experiências memoráveis com
-            precisão e criatividade.
+            A Summit nasceu com o propósito de elevar o padrão dos eventos
+            corporativos. Mais do que organizar, nós projetamos experiências
+            que conectam pessoas e fortalecem marcas.
           </p>
-        </div>
-
-        <div class="footer-links">
-          <h4>Links Rápidos</h4>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="servicos.html">Eventos</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-contact">
-          <h4>Fale Conosco</h4>
-          <p><i class="fa-solid fa-phone"></i> (11) 99999-9999</p>
-          <p><i class="fa-solid fa-envelope"></i> contato@summiteventos.com</p>
-          <div class="social-icons">
-            <a
-              href="https://www.instagram.com"
-              aria-label="Siga-nos no Instagram"
-              target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              aria-label="Visite nosso LinkedIn"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a
-              href="https://www.whatsapp.com"
-              target="_blank"
-              aria-label="Chame no WhatsApp"
-              ><i class="fa-brands fa-whatsapp"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container">
           <p>
-            &copy; 2026 Summit Eventos. Todos os direitos reservados.
-            Desenvolvido por <strong>LUMEX</strong>.
+            Nossa equipe combina rigor técnico com sensibilidade criativa,
+            garantindo que sua única preocupação seja receber seus convidados.
           </p>
+          <a href="sobre.html" class="btn btn-primary">Conheça nossa história</a>
         </div>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <script src="js/main.js"></script>
-  </body>
+  <footer class="footer">
+    <div class="container grid-footer">
+      <div class="footer-about">
+        <img src="assets/images/logo.webp" alt="Summit Eventos" class="footer-logo" />
+        <p>
+          Transformando visões corporativas em experiências memoráveis com
+          precisão e criatividade.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Eventos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Fale Conosco</h4>
+        <p><i class="fa-solid fa-phone"></i> (11) 99999-9999</p>
+        <p><i class="fa-solid fa-envelope"></i> contato@summiteventos.com</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com" 
+          aria-label="Siga-nos no Instagram" 
+          target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com" 
+          target="_blank" 
+          aria-label="Visite nosso LinkedIn"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.whatsapp.com" 
+          target="_blank" 
+          aria-label="Chame no WhatsApp"><i
+              class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>
+          &copy; 2026 Summit Eventos. Todos os direitos reservados.
+          Desenvolvido por <strong>LUMEX</strong>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+
 </html>
