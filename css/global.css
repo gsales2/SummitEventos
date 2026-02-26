@@ -53,10 +53,6 @@ input, select, textarea {
   margin: 0 auto;
 }
 
-.text-limit {
-  max-width: 700px;
-}
-
 .btn {
   display: inline-block;
   padding: 12px 26px;

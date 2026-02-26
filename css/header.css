@@ -127,17 +127,17 @@ header .container .btn {
   }
 
   header .container .nav .nav-list {
-    display: flex !important; /* Força a exibição */
-    position: static !important; /* Remove o 'fixed' que cobria a tela */
+    display: flex !important;
+    position: static !important;
     width: auto !important;
     height: auto !important;
-    background-color: transparent !important; /* Tira o fundo escuro do mobile */
-    backdrop-filter: none !important; /* Tira o desfoque */
-    flex-direction: row !important; /* Itens um ao lado do outro */
+    background-color: transparent !important;
+    backdrop-filter: none !important;
+    flex-direction: row !important;
     justify-content: flex-end;
     gap: 30px;
-    right: 0 !important; /* Garante que está na posição correta */
-    transition: none !important; /* Remove a animação de deslizar */
+    right: 0 !important;
+    transition: none !important;
     padding: 0;
   }
 

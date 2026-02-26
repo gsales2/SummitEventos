@@ -97,11 +97,6 @@ textarea:focus {
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
-.btn-block {
-  width: 100%;
-  padding: 15px;
-  cursor: pointer;
-}
 
 @media screen and (max-width: 360px) {
   .container {
